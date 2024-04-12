@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er form</title>
+    <meta name="author" content="Andrés AR">
+    <meta name="keywords" content="formulario,html,css,practica">
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <section id="form-width">
+        <h1>Registro de usuario</h1>
+        <form>
+            <!-- Entrada de datos -->
+            <!-- label -> Etiqueta que muestra el título de la entrada, y se debe relacionar con la entrada a través del "id" -->
+            <div>
+                <label for="nombre">Introduzca su nombre:</label>
+                <input type="text" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div>
+                <label for="apellido">Introduzca su apellido:</label>
+                <input type="text" id="apellido" placeholder="Apellido" required>
+            </div>
+            <div>
+                <label for="email">Introduzca su correo electrónico:</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="password">Introduzca una contraseña</label>
+                <input type="password" id="password" placeholder="Contraseña"
+                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]){8,}" required>
+            </div>
+            <div id="dual">
+                <div id="age">
+                    <label for="edad">Introduzca la edad</label>
+                    <input type="number" id="edad" placeholder="Edad" min="18" max="100" step="1">
+                </div>
+                <div id="colorpick">
+                    <label for="color">Introduzca su color favorito</label>
+                    <input type="color">
+                </div>
+            </div>
+            <label for="fechaNacimiento">Introduzca su fecha de nacimiento</label>
+            <input type="datetime-local" id="fechaNacimiento">
+            <div>
+        
+                <label for="textarea">Introduzca más información si se requiere:</label>
+                <textarea id="textarea" cols="30" rows="10" placeholder="De más detalles (opcional)"></textarea>
+            </div>
+            <div>
+                <label for="sexo">Sexo:</label>
+                <p>
+                    Hombre
+                    <input type="radio" name="sexo" id="sexo" value="hombre">
+                </p>
+                <p>
+                    Mujer
+                    <input type="radio" name="sexo" id="sexo" value="mujer">
+                </p>
+                <p>
+                    Vikingo
+                    <input type="radio" name="sexo" id="sexo" value="vikingo">
+                </p>
+            </div>
+            <div>
+                <label for="cursos">Selecciona los cursos de interés:</label>
+                
+                <p>
+                    Curso de HTML
+                    <input type="checkbox" name="cursos" id="cursos" value="html">
+                </p>
+                <p>
+                    Curso de CSS
+                    <input type="checkbox" name="cursos" id="cursos" value="css">
+                </p>
+                <p>
+                    Curso de JavaScript
+                    <input type="checkbox" name="cursos" id="cursos" value="javascript">
+                </p>
+                <p>
+                    Curso de Phyton
+                    <input type="checkbox" name="cursos" id="cursos" value="Phyton">
+                </p>
+            </div>
+            <div id="sent-delete">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar Datos">
+            </div>
+            
+
+        </form>
+    </section>
+</body>
+
+</html>

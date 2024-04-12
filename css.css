@@ -1,0 +1,108 @@
+body {
+    background-color: antiquewhite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: hsl(29, 56%, 40%);
+}
+#form-width {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    max-width: 500px;
+    overflow: scroll;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px #9e642d9d;
+}
+#form-width::-webkit-scrollbar, textarea::-webkit-scrollbar {
+    width: 0;
+}
+h1 {
+    position: relative;
+    font-size: 28px;
+    text-align: center;
+    margin: 0 0 20px;
+    color: #9e642d;
+}   
+h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #9e642d;
+}
+form {
+    padding: 20px 0;
+}
+form input, form textarea {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #9e642d;
+    margin: 10px 0 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+form textarea {
+    height: 150px;
+    resize: none;
+}
+form label, form input {
+    display: block;
+}
+form label {
+    font-weight: bold;
+    font-size: 16px;
+}
+form input[type="submit"],form input[type="reset"] {
+    background-color:hsl(29, 56%, 40%);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    height: auto;
+}
+form input[type="reset"] {
+    background-color: white;
+    color: hsl(29, 56%, 40%);
+}
+form input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+    color: hsl(29, 56%, 40%);
+}
+input[type="color"] {
+    background-color: white;
+}
+input:active {
+    border: 1px solid red;
+}
+form input::placeholder,form textarea::placeholder {
+    font-size: 14px;
+    color: #9e642d6b;;
+}
+form #age, form #colorpick {
+    width: calc(50% - 10px);
+}
+form #dual {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+form #sent-delete {
+
+}
